@@ -1,0 +1,39 @@
+body {
+    background-color:rgb(204, 204, 204);
+}
+
+/* kleuraanpassing navigatiebalk */
+.nav a {
+    color: white;
+    }
+.nav a:hover {
+    color:rgb(38, 206, 206);
+    }
+.nav a:visited {
+    color:white;
+    }
+.nav a:active {
+    color:black;
+    }
+ 
+.header-custom {
+    background-color: rgb(204, 204, 204);
+    color: white;
+    }
+
+.nav-custom {
+    background-color: rgb(204, 204, 204);
+    color: white;
+    }
+
+/* Test class
+.custom-class {
+    background-color: green;
+}
+@media (min-width: 576px) {
+    .custom-class {
+        background-color: red;
+    }
+}
+ */ 
+          
