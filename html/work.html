@@ -370,29 +370,21 @@ crossorigin="anonymous">
     
           <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
 
-<!-- Masonry layout-->
+<!-- Masonry layout -->
     <script>
-        setTimeout(function () {
-  var msnry = new Masonry('.grid');
-  msnry.layout();
-}, 100);
+        var $grid = document.querySelector('.row');
+        var msnry = new Masonry($grid, {
+            itemSelector: '.col',
+            percentPosition: true
+        });
 
-setTimeout(function () {
-  var msnry = new Masonry('.grid');
-  msnry.layout();
-}, 300);
-
-setTimeout(function () {
-  var msnry = new Masonry('.grid');
-  msnry.layout();
-}, 1000);
-
-setTimeout(function () {
-  var msnry = new Masonry('.grid');
-  msnry.layout();
-}, 5000);
+        var $images = $grid.querySelectorAll('.card img');
+        $images.forEach(function (el) {
+            el.addEventListener('load', function () {
+                console.log("Image is loaded: " + el.getAttribute("src"));
+                msnry.layout();
+            });
+        });
     </script>
-
-
         </body>
 </html>
