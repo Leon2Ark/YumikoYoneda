@@ -372,19 +372,25 @@ crossorigin="anonymous">
 
 <!-- Masonry layout-->
     <script>
-        var $grid = document.querySelector('.row');
-        var msnry = new Masonry($grid, {
-            itemSelector: '.col',
-            percentPosition: true
-        });
+        setTimeout(function () {
+  var msnry = new Masonry('.grid');
+  msnry.layout();
+}, 100);
 
-        var $images = $grid.querySelectorAll('.card img');
-        $images.forEach(function (el) {
-            el.addEventListener('load', function () {
-                console.log("Image is loaded: " + el.getAttribute("src"));
-                msnry.layout();
-            });
-        });
+setTimeout(function () {
+  var msnry = new Masonry('.grid');
+  msnry.layout();
+}, 300);
+
+setTimeout(function () {
+  var msnry = new Masonry('.grid');
+  msnry.layout();
+}, 1000);
+
+setTimeout(function () {
+  var msnry = new Masonry('.grid');
+  msnry.layout();
+}, 5000);
     </script>
 
 
