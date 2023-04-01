@@ -1,0 +1,123 @@
+body {
+    background-color:rgb(204, 204, 204);
+    color: black;
+}
+
+.header {
+    color: white;}
+
+p {
+    padding-bottom: 0.5em;
+    
+    font-size: x-small;
+   /* font-size: small;*/
+    
+    
+}
+/*
+h1 {
+    line-height: normal !important;
+  }*/
+
+.navbar {
+    background-color: rgb(204, 204, 204);
+}
+/*
+.navbar-collapse.collapse.show {
+    max-height: 280px;
+    overflow-y: auto;
+  }
+*/
+
+.accordion {
+	--bs-accordion-btn-color: black;
+	--bs-accordion-btn-bg: rgb(204, 204, 204);
+	--bs-accordion-active-color: black;
+	--bs-accordion-active-bg: rgb(204, 204, 204);
+    --bs-accordion-color: black;
+    --bs-accordion-bg: rgb(204, 204, 204);  
+    
+    --bs-accordion-border-width: 0em;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    } 
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+   border-radius: rounded-0;
+   --bs-card-spacer-y:0;
+   --bs-card-spacer-x:0;
+    
+ }
+
+ .card-img {
+    border-radius: rounded-0;
+ }
+ .card {
+    border-radius: 0%;
+    color:black;
+    background: rgb(204, 204, 204);
+    border-width: 0em;
+     }
+ 
+ .img-thumbnail {
+    padding: 0;
+    margin: 0;
+    
+    border-radius: 0;
+    border-width: 0;
+    
+    }
+
+ .bg-primary {
+    background-color: rgb(204, 204, 204)!important;
+}
+
+.list-group-item {
+    color:black;
+    background-color: rgb(204, 204, 204);
+    border-width: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+a {
+    color: black;
+    }
+/*.a:hover {
+    color:white    }
+.a:visited {
+    color:white;
+    }
+.a:active {
+    color:black;
+    }
+.a-link:hover:hover {
+    color:brown;
+}
+
+.nav-custom {
+    background-color: rgb(204, 204, 204);
+    color: white;
+    }
+*/
+/* Test class
+.custom-class {
+    background-color: green;
+}
+@media (min-width: 576px) {
+    .custom-class {
+        background-color: red;
+    }
+}
+ */ 
+          
