@@ -5,15 +5,15 @@ body {
 
 .header {
     color: white;}
-
+ /*
 p {
     padding-bottom: 0.5em;
     
     font-size: x-small;
-   /* font-size: small;*/
+   font-size: small;
     
     
-}
+}*/
 /*
 h1 {
     line-height: normal !important;
@@ -51,7 +51,7 @@ h1 {
     width: 100%;
     height: 100%;
 }
-
+/*
 .card {
    border-radius: rounded-0;
    --bs-card-spacer-y:0;
@@ -77,7 +77,7 @@ h1 {
     border-width: 0;
     
     }
-
+*/
  .bg-primary {
     background-color: rgb(204, 204, 204)!important;
 }
