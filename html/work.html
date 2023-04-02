@@ -537,7 +537,15 @@
 <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
 <!-- Masonry images loaded-->
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-
+<script>      
+var $grid = $('.grid').imagesLoaded( function() {
+  // init Masonry after all images have loaded
+  $grid.masonry({
+    // options...
+  });
+});
+</script>      
+<!--
 <script>
   // init Masonry
 var $grid = $('.grid').masonry({
@@ -564,6 +572,6 @@ $grid.imagesLoaded().progress( function() {
         });
     });
 </script>
-
+-->
 </body>
 </html>
