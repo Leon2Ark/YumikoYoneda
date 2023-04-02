@@ -538,7 +538,9 @@ crossorigin="anonymous">
  <!-- Masonry layout -->   
 <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
 
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
+/*
 <script>    
   var $grid = document.querySelector('.row');
   var msnry = new Masonry($grid, {
@@ -554,7 +556,17 @@ crossorigin="anonymous">
         });
     });
 </script>
-
+*/
+<script>
+  // init Masonry
+var $grid = $('.grid').masonry({
+  // options...
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});
+</script>  
 
 </body>
 </html>
